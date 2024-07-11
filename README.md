@@ -8,7 +8,7 @@ steps to repro:
   * just run `npx create-remix@latest --template https://github.com/jacob-ebey/remix-shadcn/tree/cloudflare`
 * npm run dev
   * note no warnings
-* follow instructions here: https://posthog.com/docs/libraries/remix
+* follow instructions here: https://posthog.com/docs/libraries/remix ( --force again )
 * page should hot reload with a warning
 
 ```
