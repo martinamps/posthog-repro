@@ -1,12 +1,14 @@
 # posthog warning repro
 
-I tried to repro in a fresh remix cloudflare page project and no luck, realized that it was comign from my shadcn components so I found this template and tested this. It's a little old dependency wise so you'll need to --force a couple of times, but my actual project is on the latest versions of everything fwiw.
-a
+(made for [Paul](https://x.com/pauldambra/status/1811479116228546946))
+
+I tried to repro in a fresh remix cloudflare pages project and no luck, realized that it was coming from my shadcn components so I found this template and was able to repro it immediately. It's a little old dependency wise so you'll need to --force a couple of times, but my actual project is on the latest versions of everything fwiw.
+
 steps to repro:
 
 * install this repository (note you'll need to npm i --force ... sorry)
-  * just run `npx create-remix@latest --template https://github.com/jacob-ebey/remix-shadcn/tree/cloudflare`
-* npm run dev
+  * just run `npx create-remix@latest --template https://github.com/jacob-ebey/remix-shadcn/tree/cloudflare` - when it fails, npm i --force
+* npm run dev should kick up a local dev server for you
   * note no warnings
 * follow instructions here: https://posthog.com/docs/libraries/remix ( --force again )
 * page should hot reload with a warning
